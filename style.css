@@ -1,0 +1,42 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    /* background-image: url('https://img.freepik.com/free-vector/vibrant-fluid-gradient-background-with-curvy-shapes_1017-32108.jpg'); */
+}
+#main {
+    border: 1px solid black;
+    background-image: url('https://img.freepik.com/free-vector/vibrant-fluid-gradient-background-with-curvy-shapes_1017-32108.jpg');
+}
+#line {
+    border: .3px solid rgba(0, 0, 0, 0.056);
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bolder;
+    padding-top: 10px;
+    color: rgb(215, 151, 32);
+}
+#n{
+    margin-top: 20px;
+}
+#e{
+    margin-top: 2px;
+}
+#p{
+    padding-top: 0px;
+}
+button {
+    background-color: rgba(36, 209, 97, 0.855);
+    border: 0px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+}

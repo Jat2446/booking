@@ -50,7 +50,7 @@ function showNewUserOnScreen(user){
     //     phoneno : `${userphoneno.value}`
 
     // }
-    // userdatastring = JSON.stringify(userdata);
+    //userdatastring = JSON.stringify(userdata);
 
     const newli = document.createElement("li");
     newli.className = `litag`;
@@ -87,9 +87,18 @@ item.addEventListener("click",onClick);
 function onClick(event){
     event.preventDefault();
     if (event.target.classList.contains("delbtn")){
-        const btnId = JSON.parse(event.target.id).username;
-        localStorage.removeItem(`${btnId}`);
-        event.target.parentElement.remove();
+        axios
+            .delete('https://crudcrud.com/api/1aa05d45485b46fdb364067a75097226/appointmentData')
+            .then ((response) => {
+                console.log(response)
+            })
+            .catch ((error) => {
+                console.log(error)
+            })
+
+        // const btnId = JSON.parse(event.target.id).username;
+        // localStorage.removeItem(`${btnId}`);
+        // event.target.parentElement.remove();
     }
     if (event.target.classList.contains('editbtn')) {
         //remove from local storage
